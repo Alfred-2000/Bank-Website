@@ -46,17 +46,30 @@ nav ul li
     line-height: 50px;
     margin: 0 10px;
 }
-nav ul .sub-menu1
+nav ul ul
 {
+    padding: 0px;
     display: none;
 }
-nav ul li:hover .sub-menu1 ul li
+nav ul ul li
 {
-    display: block;
-    position: absolute;
-    background-color: royalblue;
-    margin-top: 15px;
-    margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 175px;
+    line-height: 35px;
+}
+nav ul li:hover ul
+{
+    display: block;    
+    position: absolute;    
+    background-color: rgb(212, 221, 245);
+    box-shadow: 0 0 10px rgb(57, 57, 77);
+    border-radius: 5px;
+    color: black;
 }
 nav ul li a
 {
@@ -67,9 +80,10 @@ nav ul li a
 }
 nav ul li a:hover
 {
-    background-color: rgba(0, 0, 0, 0.767);
-    color: white;
-    transition: 0.5s;
+    color: rgb(71, 141, 231);
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgb(57, 57, 77);
+    border-radius: 5px;
 }
 .checkbtn
 {
@@ -85,6 +99,13 @@ nav ul li a:hover
 #check
 {
     display: none;
+}
+@media(max-width:991px)
+{
+    nav ul
+    {
+        margin-right: 60px;
+    }
 }
 @media(max-width:952px)
 {
@@ -107,10 +128,6 @@ nav ul li a:hover
     {
         padding: 10px 5px 5px 80px;
     }
-    nav ul li
-    {
-        border: 1px solid white;
-    }
     .checkbtn
     {
         display: block;
@@ -126,6 +143,7 @@ nav ul li a:hover
     }
     nav ul li
     {
+        border: 1px solid white;
         background: #abc4ff;
         display: block;
         padding: 7px 0px;
@@ -135,10 +153,36 @@ nav ul li a:hover
     {
         font-size: 1.25em;
     }
+    nav ul li a:hover
+    {
+        transition: 0.3s;
+        box-shadow: none;
+    }
+    nav ul ul 
+    {
+        width: 187px;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul ul li
+    {
+        border: none;
+        background: none;
+    }    
     a:hover
     {
         background: none;
         color: #0082e6;
+    }
+    nav ul li:hover ul
+    {
+        left: 30%;
+        font-size: .9em;
+    }
+    nav ul li:hover ul li a
+    {
+        border: 1px solid black;
+        /* line-height: 30px; */
     }
     #check:checked ~ ul
     {
