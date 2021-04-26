@@ -160,9 +160,6 @@ nav ul ul ul li{
   nav ul ul li{
     border-bottom: 0px;
   }
-  span.cancel:before{
-    content: '\f00d';
-  }
 }
 .content{
   z-index: -1;
