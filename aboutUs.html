@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #aboutUs{
+            background: rgb(226, 225, 224);
+            /* background-color: aqua; */
+        }
+        .container{
+            width: min(991px, 80%);
+            margin: auto;
+            height: 100%;
+        }
+        .content{
+            /* background: coral; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* padding:1em 0; */
+        }
+        .dflex{
+            /* border: 1px solid black; */
+            background: rgb(188, 188, 214);
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 40px;
+            text-align: center;
+            cursor: pointer;
+        }        
+        .d-image img{
+            height: 160px;
+        }
+        .d-text{
+            padding: .5rem;
+        }
+        .d-text h2{
+            padding-bottom: .5rem;
+        }
+        
+        @media (min-width: 768px){
+            #aboutUs{
+                height: 100vh;
+            }
+            .dflex{
+                margin-top: 1.1rem;
+                padding: 0;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }           
+            .d-image img{
+                height: 185px;
+            }   
+            .content{
+                padding: 1.5rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="aboutUs">
+        <div class="container">
+            <div class="content">
+                <div class="dflex">
+                    <div class="d-image">
+                        <img src="images/zero balance.jpg" alt="zero balance">
+                    </div>
+                    <div class="d-text">
+                        <h2>Zero Balance</h2>
+                        <p>Interest rate 3%, Initial amount Rs.0</p>
+                    </div>
+                </div>
+                <div class="dflex">
+                    <div class="d-image">
+                        <img src="images/regular.jpg" alt="regular">
+                    </div>
+                    <div class="d-text">
+                        <h2>Regular</h2>
+                        <p>Interest rate 4%, Initial amount- Rs.2000</p>
+                    </div>
+                </div>
+                <div class="dflex">
+                    <div class="d-image">
+                        <img src="images/premium.jpg" alt="premium">
+                    </div>
+                    <div class="d-text">
+                        <h2>Premium</h2>
+                        <p>Interest rate 5%, Initial amount- Rs.10000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
