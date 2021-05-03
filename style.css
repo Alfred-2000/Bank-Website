@@ -44,6 +44,26 @@ header {
     align-items: center;
 }
 
+.login{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.login h2{
+    margin: 20px;
+    position: absolute;
+    /* float: right; */
+    right: 0;
+    top: 15%;
+    width: 120px;
+    color: #3a91bd;
+    border: 1px solid  #3a91bd;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.login h2:hover{
+    color: white;
+    background:  #3a91bd;
+}
 .nav-btn {
     flex: 3;
     display: flex;
@@ -75,7 +95,7 @@ header {
     line-height: 3rem;
     color: #fff;
     padding: 0 .8rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: .95rem;
     display: flex;
     align-items: center;
@@ -257,6 +277,13 @@ header {
     }
     #check {
         display: block;
+    }
+    .login h2{
+        font-size: 1.3rem;
+        right: 11%;
+        top: 24%;
+        width: 110px;
+        padding: .2rem;
     }
     .nav-btn {
         position: fixed;
